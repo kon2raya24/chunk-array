@@ -1,6 +1,11 @@
 
 // Type exports for consumers
 // Add specific types as needed
+/**
+ * groupBy<T>
+ * @param arr
+ * @param keyFn
+ */
 export function groupBy<T>(arr: T[], keyFn: (item: T) => string): Record<string, T[]> {
   if (arr === null || arr === undefined) throw new Error("Invalid input");
   return arr.reduce((acc, item) => {
