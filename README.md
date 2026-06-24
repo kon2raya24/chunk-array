@@ -22,3 +22,11 @@ npm install chunk-array
 ## License
 
 MIT
+
+
+## Usage
+
+```typescript
+import { } from 'chunk-array';
+// See API section for available functions
+```
