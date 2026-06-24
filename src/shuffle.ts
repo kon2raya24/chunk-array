@@ -1,6 +1,10 @@
 
 // Type exports for consumers
 // Add specific types as needed
+/**
+ * shuffle<T>
+ * @param arr
+ */
 export function shuffle<T>(arr: T[]): T[] {
   if (arr === null || arr === undefined) throw new Error("Invalid input");
   const result = [...arr];
