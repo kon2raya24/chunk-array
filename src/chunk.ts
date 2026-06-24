@@ -1,3 +1,8 @@
+/**
+ * chunk<T>
+ * @param arr
+ * @param size
+ */
 export function chunk<T>(arr: T[], size: number): T[][] {
   if (!Array.isArray(arr)) throw new Error("First argument must be an array");
   if (size <= 0) throw new Error("Chunk size must be positive");
