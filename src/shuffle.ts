@@ -2,6 +2,7 @@
 // Type exports for consumers
 // Add specific types as needed
 export function shuffle<T>(arr: T[]): T[] {
+  if (arr === null || arr === undefined) throw new Error("Invalid input");
   const result = [...arr];
   for (let i = result.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
